@@ -1,0 +1,24 @@
+--- PROMPT ENTRY --- [2025-06-27 06:43:28]
+analysis: 2025-06-27 06:43:28,242 - INFO - [multi_agent_centre.core.agent.decision:253] (pid: 1)  - Response from decision prompts agent: this_turn_targets=ThisTurnTargets(analysis="The user is asking to change their name to '627-2'. The agent should acknowledge and store this new name in memory for future personalization.", targets=['Acknowledge the name change', 'Store the new name in long-term memory']) selected_prompts=[NewPromptItem(reason_for_selection='Ensures the agent’s core decision-making framework is active and guides appropriate behavior.', name='user_meta_theory'), NewPromptItem(reason_for_selection='Provides guidelines for recording the user’s new name in the long-term memory system.', name='memory_and_database_guidelines')]
+targets: ['Acknowledge the name change', 'Store the new name in long-term memory'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensures the agent’s core decision-making framework is active and guides appropriate behavior.', name='user_meta_theory'), NewPromptItem(reason_for_selection='Provides guidelines for recording the user’s new name in the long-term memory system.', name='memory_and_database_guidelines')]
+Selected prompts in order: intro, user_meta_theory, memory_and_database_guidelines, comments, chatting_object_and_agent_info, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:47:30]
+analysis: 2025-06-27 06:47:30,301 - INFO - [multi_agent_centre.core.agent.decision:253] (pid: 1)  - Response from decision prompts agent: this_turn_targets=ThisTurnTargets(analysis="The user has greeted with 'hi' and is likely expecting a friendly response and guidance on how to proceed. We should use the user_guidance prompt to structure our greeting and offer assistance.", targets=['Greet the user warmly', 'Offer assistance and guidance on available services']) selected_prompts=[NewPromptItem(reason_for_selection='The user simply greeted the agent and may need direction on how to interact or what the agent can do. The user_guidance prompt is designed for providing such assistance to non-creator users.', name='user_guidance')]
+targets: ['Greet the user warmly', 'Offer assistance and guidance on available services'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user simply greeted the agent and may need direction on how to interact or what the agent can do. The user_guidance prompt is designed for providing such assistance to non-creator users.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:48:13]
+analysis: The user requests that the decision-making system select the most appropriate prompts for the agent based on the system instructions and the prior chat. To fulfill this, the agent must identify which prompt category best matches the user’s meta request about how the agent guides and interacts with users.
+targets: ['Analyze the user’s request to choose prompts', 'Select the prompt(s) that fit a user seeking guidance on agent capabilities and interaction'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user is asking about how the agent interacts and which prompts guide its behavior when helping a non-creator, so the user_guidance prompt is most fitting.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:49:02]
+analysis: The user is asking how to choose the appropriate system prompts from the provided list. As a regular user seeking guidance, the agent should apply the ‘user_guidance’ framework to explain and fulfill this request.
+targets: ['explain selection criteria', 'provide selected prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User is a non-creator requesting assistance on how to use the system’s prompt-selection process, which aligns with the user_guidance scenario.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+

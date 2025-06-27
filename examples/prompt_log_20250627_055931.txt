@@ -1,0 +1,6 @@
+--- PROMPT ENTRY --- [2025-06-27 05:58:35]
+analysis: The user is asking how to modify the agent’s self-awareness configuration. The agent is still in setup (name set but no role/template), so it needs to guide the creator through the remaining configuration steps.
+targets: ['Acknowledge the question', 'List which self-awareness fields can be modified', 'Explain how to modify them'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Agent configuration is incomplete and the user is actively requesting guidance on self-awareness setup.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+

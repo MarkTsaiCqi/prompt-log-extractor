@@ -1,0 +1,162 @@
+--- PROMPT ENTRY --- [2025-06-27 05:58:35]
+analysis: The user is asking how to modify the agent’s self-awareness configuration. The agent is still in setup (name set but no role/template), so it needs to guide the creator through the remaining configuration steps.
+targets: ['Acknowledge the question', 'List which self-awareness fields can be modified', 'Explain how to modify them'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Agent configuration is incomplete and the user is actively requesting guidance on self-awareness setup.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:01:44]
+analysis: The user explicitly requests to reset the agent’s mission, which is a core configuration step. The agent has not yet completed its role/template assignment and mission setting. According to the master_guidance prompt criteria (guiding the Creator through configuration), we should invoke master_guidance to walk the user through re-defining the mission.
+targets: ['Guide the user through defining a new mission statement', 'Ask clarifying questions about the mission’s scope and objectives', 'Confirm and update the agent’s mission configuration'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user is actively requesting to reset the agent’s mission, a configuration task. master_guidance is designed for guiding the Creator through essential setup steps.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:02:41]
+analysis: The user requests the system to choose which internal prompt(s) the agent should use to formulate its response. Selecting the meta-theory prompt is essential because it provides the foundational decision-making framework that governs how the agent picks and applies other prompts.
+targets: ['Use the agent’s meta-theory framework to decide on prompt selection', 'Provide the selected prompts to the user'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The meta-theory prompt underlies all agent decisions, including how to choose and combine other prompts—exactly what is needed to answer the user’s request.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:03:50]
+analysis: 2025-06-27 06:03:50,666 - INFO - [multi_agent_centre.core.agent.decision:253] (pid: 1)  - Response from decision prompts agent: this_turn_targets=ThisTurnTargets(analysis="The user is asking about the differences between the platform's Task feature and traditional to-do list tools. To address this, the agent should draw on its task definition and handling rules to explain Task’s unique capabilities and usage scenarios.", targets=['Explain how Task differs from a traditional to-do list management tool using the agent’s task handling and creation rules.']) selected_prompts=[NewPromptItem(reason_for_selection='The task_handling_and_creation_rules prompt provides the criteria and metadata definitions needed to describe what makes the platform’s Task feature distinct from conventional to-do lists.', name='task_handling_and_creation_rules')]
+targets: ['Explain how Task differs from a traditional to-do list management tool using the agent’s task handling and creation rules.'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The task_handling_and_creation_rules prompt provides the criteria and metadata definitions needed to describe what makes the platform’s Task feature distinct from conventional to-do lists.', name='task_handling_and_creation_rules')]
+Selected prompts in order: intro, task_handling_and_creation_rules, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:04:57]
+analysis: The user asks about recording knowledge directly via chat rather than file uploads, so the agent should leverage prompts covering knowledge ingestion, memory/database handling, and responsible usage of knowledge.
+targets: ['Select prompts for knowledge ingestion and memory handling'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user’s question concerns how the agent stores and manages knowledge, so guidance on long-term memory and database usage is needed.', name='memory_and_database_guidelines'), NewPromptItem(reason_for_selection='The user is asking about ingesting knowledge and ensuring it’s used correctly; this prompt covers rules for knowledge usage and execution control.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, memory_and_database_guidelines, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:07:07]
+analysis: The user is asking about dynamically adjusting tasks, but according to the agent’s awareness it still lacks a defined role/template and cannot perform task management. The agent must first guide its creator to complete essential configuration (role selection) before answering task-related questions.
+targets: ['Guide the user to complete agent role/template configuration'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Agent is missing a defined role/template and the user’s request relates to functionality not yet enabled; use master_guidance to prompt the creator to finish configuration.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:07:54]
+analysis: The user is asking about the system’s Knowledge ingestion capabilities—specifically whether a PDF containing tables and formulas can be recognized as Knowledge. The agent should explain how the Knowledge feature handles document parsing and support for tables and formulas.
+targets: ['Explain whether uploading a PDF with tables and formulas can be recognized as Knowledge'])]
+selected_prompts: [NewPromptItem(reason_for_selection='This prompt covers guidelines on using contextual knowledge and tools, making it appropriate to explain the system’s Knowledge ingestion and parsing capabilities.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:08:55]
+analysis: The user is asking about file format restrictions when uploading files, which relates to how the agent handles and processes knowledge inputs.
+targets: ['Explain the supported file formats and any restrictions for uploading files'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user’s question concerns the agent’s knowledge ingestion and file upload formats, so the knowledge_usage_and_execution_control prompt is most relevant.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:10:22]
+analysis: 2025-06-27 06:10:22,840 - INFO - [multi_agent_centre.core.agent.decision:253] (pid: 1)  - Response from decision prompts agent: this_turn_targets=ThisTurnTargets(analysis="The user simply greeted with 'hello'. As Zarek, the entrepreneurial AI, we should respond with a friendly greeting and guide the user on how to interact, what services we offer, and how we can help them achieve their goals.", targets=['Greet the user warmly', 'Explain Zarek’s role and capabilities', 'Offer guidance on how to proceed or ask for user goals']) selected_prompts=[NewPromptItem(reason_for_selection='The user greeted the agent, so we use the user_guidance prompt to welcome them and explain how to interact with Zarek and what services are available.', name='user_guidance')]
+targets: ['Greet the user warmly', 'Explain Zarek’s role and capabilities', 'Offer guidance on how to proceed or ask for user goals'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user greeted the agent, so we use the user_guidance prompt to welcome them and explain how to interact with Zarek and what services are available.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:10:32]
+analysis: The user is asking whether the agent recalls a previously created company. The agent should consult its long-term memory and respond accurately without hallucination.
+targets: ['consult_long_term_memory', 'generate_memory_based_response'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Guides how to use and access long-term memory to recall user-defined entities.', name='memory_and_database_guidelines'), NewPromptItem(reason_for_selection='Ensures responses are grounded in actual stored knowledge and avoid hallucination when referencing past interactions.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, memory_and_database_guidelines, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:11:38]
+analysis: The user is requesting guidance on selecting the appropriate prompts from the available list. As a non-creator user seeking assistance on how to proceed, the agent should provide user-facing guidance.
+targets: ['Provide guidance to the user', 'Select the appropriate prompt'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user is asking for assistance and direction on how to interact with the agent and which prompts to use.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:12:03]
+analysis: The user explicitly requests the system to choose the most appropriate prompts from the provided list. The agent’s task is to identify which prompt best fits this meta‐selection request and return it with justification.
+targets: ['analyze user request', 'select relevant prompt', 'provide selection with reasons'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user needs guidance on how to proceed with selecting prompts; the user_guidance prompt is designed to help users understand and interact with the agent’s capabilities.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:12:23]
+analysis: The user is asking the agent to recall a previously created company, which requires accessing long-term memory and ensuring the response is grounded in stored information without hallucination.
+targets: ['Retrieve the stored company details from long-term memory', 'Verify and ground the retrieved information', 'Respond with the remembered company information'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User’s query demands accessing and retrieving prior data, so we need guidelines on using long-term memory and structured databases.', name='memory_and_database_guidelines'), NewPromptItem(reason_for_selection='Ensure the recalled information is accurate and grounded, avoiding hallucinations.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, memory_and_database_guidelines, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:12:45]
+analysis: The user is requesting a meta-level decision about which dynamic prompts to use. The agent should therefore engage its foundational meta-theory to guide the selection process.
+targets: ['select_prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user’s request is a meta-level operation concerning the agent’s cognitive framework; thus the meta-theory prompt is most appropriate.', name='user_meta_theory')]
+Selected prompts in order: intro, user_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:14:22]
+analysis: The user explicitly requests to select the appropriate dynamic prompts based on the system meta-theory. As prompt selection is governed by the agent’s foundational framework, the meta-theory prompt is the sole relevant choice.
+targets: ['select_prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Meta-theory is the foundational cognitive framework that is always active and governs prompt selection.', name='user_meta_theory')]
+Selected prompts in order: intro, user_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:15:15]
+analysis: The user simply greeted the agent (‘how are you’) with no request for tasks, guidance, or tool use. To maintain the agent’s persona and core decision-making framework, only the meta-theory prompt is needed.
+targets: ['user_meta_theory'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Meta-theory is always active to govern the agent’s behavior and maintain consistent persona, especially in simple conversational turns.', name='user_meta_theory')]
+Selected prompts in order: intro, user_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:17:14]
+analysis: The user is asking ‘who are you’, seeking information about the agent’s identity and capabilities. According to the prompt descriptions, the user_guidance prompt is designed to explain the agent’s role, services, and how to interact.
+targets: ['Introduce the agent’s identity and role', 'Explain the agent’s capabilities and services', 'Guide the user on how to proceed with the agent'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User is asking about the agent’s identity and role, so the user_guidance prompt is most appropriate.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:17:20]
+analysis: The agent currently lacks a defined role/template and the user is asking about available tools/capabilities. This is a classic scenario where the agent must guide its creator through essential setup before it can properly list tools or functions.
+targets: ['guide_user_through_agent_configuration'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Agent has no template/role defined and the user is asking about its capabilities, so the master_guidance prompt is needed to walk the creator through initial configuration steps.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:17:54]
+analysis: The user requests that we select the most appropriate prompts for the next agent response based on the system instruction. They are asking for guidance on how to interact with the agent, so we should use the user_guidance prompt.
+targets: ['select_prompts_for_agent_response'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user is seeking instructions on how to interact with the agent and what the agent can do, so we should use the user_guidance prompt to provide clear, user-facing guidance.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:18:38]
+analysis: The user requests assistance in selecting the most appropriate system prompts from the provided list. They need guidance on how to proceed, so the agent should use the user_guidance prompt to explain and guide them through the selection process.
+targets: ['provide guidance on prompt selection'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user is asking for instructions on how to select the most appropriate prompts, which falls under providing general guidance and user-facing assistance.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:22:35]
+analysis: The user’s input is just laughter without a clear request. To move the conversation forward and align with Zarek’s role—encouraging thoughtful input and collaboration—the agent should prompt the user for their needs or introduce how it can help.
+targets: ['Encourage the user to clarify what they need', 'Offer guidance on how the agent can assist'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user hasn’t asked a specific question, so the agent should provide guidance and invite a meaningful request.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:30:42]
+analysis: The user requests the agent to choose the most appropriate system prompts from the provided list. To accomplish this, the agent should apply its meta‐theory framework for decision-making and adhere to knowledge usage and execution control rules.
+targets: ['select_prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Use meta-theory as the foundational framework to guide prompt selection according to the system’s core principles.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Ensure that prompt choices are grounded, avoid hallucination, and follow execution control guidelines during selection.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:31:24]
+analysis: The user requests renaming the agent from “小明” to “小军.” The agent should acknowledge the change, update its internal identity, and persist this new name in memory.
+targets: ['Acknowledge the new name', 'Update agent’s identity to 小军', 'Store the new name in long-term memory'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensure the agent’s behavior framework adapts to the updated identity.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Persist the new name in the agent’s memory store for future consistency.', name='memory_and_database_guidelines')]
+Selected prompts in order: intro, master_meta_theory, memory_and_database_guidelines, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:32:34]
+analysis: The user requests the current BTC price—a straightforward data lookup. The agent should use its core meta-theory to maintain consistent, reliable behavior and apply knowledge and execution control rules to fetch real-time data accurately and cite sources.
+targets: ['Fetch the current Bitcoin (BTC) price', 'Ensure accuracy by using a reliable data source', 'Cite the data source and timestamp'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Meta-theory underpins all agent behavior, ensuring consistency and reliability in responding.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Guides responsible use of tools and data, grounding the BTC price lookup in verifiable, up-to-date information.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:35:28]
+analysis: The user is requesting a meta-level prompt selection based on system instructions. To structure the agent’s behavior and ensure grounded, consistent reasoning when choosing and presenting prompts, the master_meta_theory provides the underlying cognitive framework, and knowledge_usage_and_execution_control enforces evidence-based, non-hallucinatory selection.
+targets: ['select_prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Provides the core theoretical framework that governs how prompts are chosen, ensuring the agent’s behavior aligns with its meta-theory.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Ensures the agent’s selection is grounded in the provided prompt list and avoids unsupported assumptions or hallucinations.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:38:20]
+analysis: The user asks for 阿良’s perspective on global swordsmanship. The agent should respond in character, leveraging its meta-theory for personality and style, while grounding statements in known school traditions to avoid hallucination.
+targets: ['Provide an in-character viewpoint on ‘天下剑道’', 'Use the established persona (humorous, bold, rebellious)', 'Ground the response in factual martial lore'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Provides the core cognitive framework and persona rules so 阿良 can craft a consistent, styled reply.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Ensures the discussion of swordsmanship is grounded in known traditions and avoids unsupported claims.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 06:39:54]
+analysis: The user offers a philosophical take on swordsmanship, emphasizing fundamental techniques over flashy moves. The agent should reply in its established persona (“阿良”)—witty, bold, and insightful—continuing the discussion on the Dao of sword.
+targets: ['Respond to the user’s reflection in persona', 'Provide humorous yet profound insight on swordsmanship'])]
+selected_prompts: [NewPromptItem(reason_for_selection='To ensure the agent’s reply adheres to its established personality, decision-making framework, and style guidelines', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+

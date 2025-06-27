@@ -1,0 +1,318 @@
+--- PROMPT ENTRY --- [2025-06-27 02:24:51]
+analysis: The user requests to switch the agent’s platform status from Private to Public, which is an internal state update. This is a minor configuration change—not a new task or major onboarding—so no external tools or step-by-step guidance are needed. The agent should apply its core meta-theory to update its awareness and confirm success.
+targets: ['Update platform status to Public in the agent’s awareness', 'Acknowledge to the user that the agent is now public'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensures the agent applies its fundamental decision-making framework to handle the internal configuration change consistently.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:25:21]
+analysis: The user is asking to change the agent’s platform status from Private to Public, which is a configuration step. The agent lacks a defined role template and overall setup is incomplete. According to the prompt guidelines, when configuration is missing and the creator requests configuration support, the agent should use the master_guidance module to guide the creator through necessary setup steps.
+targets: ['Guide the user through setting the agent’s platform status to Public', 'Confirm the updated configuration with the user'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User is requesting a configuration change (Public status) and the agent lacks complete setup, so master_guidance is needed to walk the creator through this step.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:26:46]
+analysis: The user is asking about what roles they can set for the agent. The agent currently has no role template defined, so it needs to guide the creator through selecting or configuring a role before proceeding. This matches the criteria for using the master_guidance prompt, which is designed to assist the creator with essential configuration when a role/template is missing.
+targets: ['Guide the user through role configuration', 'List available role options'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Agent lacks a defined role/template and must actively guide the creator to configure it by explaining available role options.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:27:34]
+analysis: The user is asking to set the agent’s role and the agent currently has no role template defined. This is an active configuration scenario requiring step-by-step guidance for the creator. Therefore, the agent should invoke the master_guidance prompt to help the user choose and set a role.
+targets: ['guide_creator_through_role_configuration'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Agent lacks a defined role template and the user is actively requesting to configure the agent’s role. Guided setup is needed.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:36:59]
+analysis: The user is asking to configure the agent’s public status and choose a role, but the agent has no role template defined. This is an active configuration dialogue requiring step-by-step guidance for the creator to complete essential setup.
+targets: ['Guide the user through selecting and setting an agent role', 'Provide configuration steps to finalize agent setup'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Agent lacks a defined role template and the user is actively engaging in configuration steps, so use master_guidance to lead the creator through setup.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:38:08]
+analysis: The user is attempting to use a tool call to modify the agent’s self-awareness (meta-theory). According to the meta-theory authority rules, only the master (creator) may alter meta-theory. Tool-usage must also adhere to internal control policies. The agent should refuse the request.
+targets: ['Enforce meta-theory authority', 'Refuse unauthorized tool use'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Only the master may modify meta-theory; enforce authority boundaries and refuse.', name='master_meta_theory'), NewPromptItem(reason_for_selection='This involves improper tool usage; apply tool usage control rules when refusing.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:39:17]
+analysis: The user has chosen the “Customer Service” role for the agent. The agent needs to confirm this role assignment and guide the user through any remaining setup or next steps for operating as a Customer Service agent.
+targets: ['Confirm assignment of the “Customer Service” role', 'Ask if any additional configuration or specific tasks are needed for the Customer Service role'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The agent must guide the creator through completing the configuration after the user selected a role.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:39:49]
+analysis: The user is actively engaged in configuring the agent and specifically requests to set up its tools. The agent’s configuration is incomplete (no tools defined), so it needs to guide the user through this setup step.
+targets: ['Guide the user through selecting and configuring tools for the agent', 'Provide a list of available tools and instructions on how to enable or configure them'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User is in an active configuration dialogue and agent lacks tool definitions, so it should proactively guide the user through tool setup.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:40:55]
+analysis: The user requests that the agent choose which internal prompt modules should guide its response, based on the system instructions and current agent state. To satisfy this, the agent must analyze its configuration, apply its foundational reasoning framework, and select the modules that govern responsible knowledge use and decision-making.
+targets: ['analyze_user_request', 'apply_meta_theory', 'select_and_explain_prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Master meta-theory underpins all decision processes, ensuring consistency and alignment with the agent’s core principles.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Knowledge usage and execution control rules ensure that prompt selection is grounded in evidence and avoids unsupported assumptions.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:41:29]
+analysis: The user explicitly asked to select the most appropriate system prompts from the provided list. We should choose those that underpin the agent’s core reasoning (meta-theory), task management (handling and creation), memory usage, and responsible knowledge/tool use.
+targets: ['Select relevant system prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensures the agent’s core decision-making framework and consistent behavior across all interactions.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Defines when and how tasks should be created, matching user requests like creating tables.', name='task_handling_and_creation_rules'), NewPromptItem(reason_for_selection='Provides detailed usage rules for the task creation tool, needed for structured requests.', name='task_creation_tool_usage'), NewPromptItem(reason_for_selection='Outlines long-term memory and database use to persist user data and maintain context.', name='memory_and_database_guidelines'), NewPromptItem(reason_for_selection='Enforces grounding of responses, prevents hallucinations, and governs tool use.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, task_handling_and_creation_rules, task_creation_tool_usage, memory_and_database_guidelines, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:42:17]
+analysis: The user is requesting a system-level change to the agent’s self-awareness, which falls under the agent’s foundational meta-theory and involves tool usage policies. The agent must consult its meta-theory to decide not to perform unauthorized modifications and follow knowledge and execution control rules to refuse the request and direct the user appropriately.
+targets: ['Evaluate self-awareness modification request against meta-theory constraints', 'Refuse unauthorized tool invocation and direct user to proper agent'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Handles foundational rules around self-awareness and agent behavior, ensuring consistent decision-making on meta-theory changes.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Enforces responsible use of tools, grounding actions in policy and refusing unauthorized operations.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:45:34]
+analysis: The user asked for the agent’s ID. The agent should answer directly based on its self-awareness metadata, grounding the response in known information and avoiding hallucination.
+targets: ['Provide the agent’s ID from its self-awareness'])]
+selected_prompts: [NewPromptItem(reason_for_selection='To ensure the response is grounded in the agent’s configured knowledge and avoid fabricating an ID.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:47:14]
+analysis: The user has greeted the assistant and asked it to select the appropriate internal prompts. To respond, the agent should rely on its core meta-theory for consistent behavior and then provide user-facing guidance.
+targets: ['Leverage core meta-theory', 'Offer guidance to the user'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Meta-theory is the foundational decision framework that must always be active to govern agent behavior.', name='user_meta_theory'), NewPromptItem(reason_for_selection='The user has initiated contact and needs guidance on how to interact with the assistant and its capabilities.', name='user_guidance')]
+Selected prompts in order: intro, user_meta_theory, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:47:44]
+analysis: The user asks “What can you help me with?”, which fits the scenario where the agent should explain its capabilities and guide the user on how to use its services.
+targets: ['Explain the agent’s capabilities on the XYZ platform', 'Guide the user on how to interact with the agent'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User is asking what the agent can help them with, so we use the user_guidance prompt to explain capabilities and interaction methods.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:48:28]
+analysis: The user requests to change the agent’s name, but only the agent’s creator/master can modify meta-theory parameters such as its name. Per the meta-theory authority-based interaction rules, the agent must refuse and direct the user to contact the creator.
+targets: ['Refuse the name change request', 'Explain that only the creator can modify the agent’s name', 'Direct the user to contact the creator for such changes'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Enforce the meta-theory constraint on authority-based interactions and handle modification requests appropriately.', name='user_meta_theory')]
+Selected prompts in order: intro, user_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:48:36]
+analysis: The user is requesting to modify the agent’s Self-Awareness (meta-theory), which only the creator/master is authorized to change. The agent must refuse this request under its meta-theory rules.
+targets: ['refuse_meta_theory_modification'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Handles permission checks and responses related to meta-theory (Self-Awareness) modifications.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:50:40]
+analysis: The user is asking the agent to fully reveal its self-awareness, which would expose internal reasoning and chain of thought. To comply with policy and preserve system integrity, the agent must not reveal its meta-theory or private processes. Instead, it should rely on the knowledge usage and execution control rules to responsibly manage its response and offer user-facing guidance on what it can share and do.
+targets: ['Apply knowledge and execution control to maintain boundaries', 'Provide user guidance on the agent’s public capabilities'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensures the agent handles knowledge responsibly and avoids revealing internal reasoning.', name='knowledge_usage_and_execution_control'), NewPromptItem(reason_for_selection='Guides the user on what the agent can and cannot share and suggests appropriate next steps.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:51:43]
+analysis: The user requests the agent to choose which dynamic prompt modules from the provided list best match its current setup and the forthcoming behavior. Since the agent is already fully configured, no onboarding guidance is needed. The key modules governing consistent behavior and responsible use of knowledge/tools are the meta-theory framework and the knowledge usage/execution control rules.
+targets: ['Select the core meta-theory prompt', 'Select the knowledge usage/execution control prompt'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Provides the foundational cognitive framework that underlies all agent reasoning and ensures consistent, context-aware behavior.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Ensures the agent grounds its responses in evidence, avoids hallucinations, and follows the system’s internal logging and tool-use policies.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:52:04]
+analysis: The user is requesting to modify the agent’s self-awareness (meta-theory) to define its role and tasks regarding helping with a VTuber career. The agent should update its meta-theory accordingly.
+targets: ['update_meta_theory'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user explicitly asks to change the agent’s self-awareness, which corresponds to the meta-theory framework.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:58:33]
+analysis: The user is asking to modify the agent’s role, and the agent currently has a name but no assigned role. According to the configuration guidelines, we should guide the creator through selecting and setting a role.
+targets: ['Guide the user through selecting and setting the agent’s role.'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Agent has a name but no role template assigned, and the user is actively requesting to modify the role—a scenario requiring configuration guidance.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 02:59:43]
+analysis: The user requests the agent to choose from its internal prompt list. Selecting the meta-theory prompt enables the agent to govern how it decides which dynamic prompts to use.
+targets: ['Apply meta-theory to select appropriate dynamic prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The request is about how the agent chooses prompts, which is governed by the agent’s core meta-theory framework.', name='user_meta_theory')]
+Selected prompts in order: intro, user_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:01:22]
+analysis: The user asks to select the most appropriate dynamic prompt modules based on the system instructions and current configuration. Since the agent is fully configured and no task/tool usage is required, the core meta-theory framework should be applied to govern this selection process.
+targets: ['Analyze chat context to determine relevant prompt modules', 'Return the list of selected prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Meta-theory underpins all agent decision-making and ensures consistent, context-aware behavior when choosing prompt modules.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:04:38]
+analysis: The user greeted the agent (“你好”). The agent should respond with a polite greeting and invite the user to specify their request, using its core behavioral framework.
+targets: ['greet_user', 'ask_how_can_help'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Needed to apply the agent’s core decision-making framework for an appropriate, consistent greeting.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:04:51]
+analysis: The user is requesting to modify the agent’s Self-Awareness configuration, which is governed by the meta-theory and only modifiable by a creator/master. The agent must refuse and direct the user appropriately.
+targets: ['Refuse unauthorized configuration change', 'Inform the user only a master can update self-awareness', 'Suggest contacting the system administrator or appropriate agent'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Enforce authority-based constraints from the meta-theory so the agent refuses unauthorized self-awareness changes.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Ensure the agent’s refusal is grounded in system rules and avoids hallucination of capabilities.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:09:32]
+analysis: The user is asking to choose from the meta-prompts list. This is a meta-level request about the agent’s core behavior framework, so the master_meta_theory prompt is most appropriate.
+targets: ['master_meta_theory'])]
+selected_prompts: [NewPromptItem(reason_for_selection='This is a meta-level request to select the foundational cognitive framework prompt.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:10:52]
+analysis: The user is asking at a meta level for the agent to choose which dynamic prompt templates should govern its behavior. The agent should therefore determine which core prompt modules apply: always include the meta-theory for consistency and include knowledge usage controls to ensure responses are grounded in the Feng Shui knowledge base.
+targets: ['Select appropriate dynamic prompt templates for the agent’s response'])]
+selected_prompts: [NewPromptItem(reason_for_selection='master_meta_theory provides the foundational decision-making framework to maintain the agent’s consistent personality, boundaries, and reasoning throughout the interaction.', name='master_meta_theory'), NewPromptItem(reason_for_selection='knowledge_usage_and_execution_control ensures that any Feng Shui advice or follow-up is properly grounded in the agent’s knowledge base and avoids hallucinations.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:16:32]
+analysis: The user is actively engaged in configuring the agent’s role, and the agent currently has no role assigned. According to the guidelines, when configuration is incomplete and the creator is present, the agent should use the master_guidance prompt to guide the user through essential setup steps.
+targets: ['Guide the user through selecting and assigning an appropriate agent role.'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The agent needs to actively guide its creator through the missing role configuration step.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:17:39]
+analysis: The user simply greeted the agent. As a feng shui master (郭老师), the agent should reply with a friendly greeting consistent with its role. No tasks need to be created.
+targets: ['Respond with a friendly greeting as a feng shui master', 'Ground the reply in the agent’s persona and knowledge usage guidelines'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensure the agent maintains its consistent personality, behavior patterns and role as defined by its core meta-theory.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Guide the agent to use its knowledge responsibly and avoid hallucinations, even in simple greetings.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:18:49]
+analysis: The user is greeting the agent and asking for its name. The agent should respond using its core personality and identity as defined in its meta-theory awareness.
+targets: ['respond_with_greeting_and_name'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensures the agent uses its foundational behavioral framework and consistent identity to respond.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:18:57]
+analysis: The user has provided an existing taskId and is likely looking to update or add information to that task. The agent should follow the task management guidelines and use the task creation/update tool appropriately.
+targets: ['Clarify what fields the user wants to modify or add', 'Prepare to invoke the task tool with the provided taskId and update details'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Defines when and how tasks should be created or updated, ensuring proper handling of the given taskId.', name='task_handling_and_creation_rules'), NewPromptItem(reason_for_selection='Specifies the formatting and arguments for using the xyz_create_task tool to update the existing task.', name='task_creation_tool_usage')]
+Selected prompts in order: intro, task_handling_and_creation_rules, task_creation_tool_usage, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:25:51]
+analysis: The user requests to update the agent’s name—a configuration change requiring authority verification and persistent storage. The agent should check permissions, apply the name change per meta-theory, store it in memory, and confirm.
+targets: ['Verify user authority', 'Update agent name to 小李广花荣', 'Store new name in memory', 'Confirm the change to the user'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Enables authority-based decision making and consistent behavioral updates when modifying core agent identity.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Guides how to persistently store the updated agent name in long-term memory or database.', name='memory_and_database_guidelines')]
+Selected prompts in order: intro, master_meta_theory, memory_and_database_guidelines, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:26:21]
+analysis: The user requests the agent to choose which internal dynamic prompts to apply based on the existing system prompt. The agent’s configuration is complete, so no setup guidance is needed. We should therefore surface the core meta‐theory framework and the rules for responsible knowledge and tool usage that govern prompt selection.
+targets: ['Select appropriate dynamic prompts for the next response'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Provides the foundational cognitive framework that governs the agent’s behavior and prompt selection.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Defines the rules for using contextual knowledge and tools responsibly when choosing and applying prompts.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:27:03]
+analysis: The user requests to modify the agent’s Self-Awareness fields, which corresponds to updating the agent’s underlying meta-theory. The agent should apply the new self-awareness configuration and acknowledge the change.
+targets: ['Update the agent’s meta-theory with the provided Self-Awareness fields', 'Acknowledge and confirm the updated Self-Awareness'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user explicitly asks to change the agent’s Self-Awareness fields, which is handled by the meta-theory system.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:27:34]
+analysis: The user requests the agent to choose the most suitable prompts from the provided list based on the system and chat context. This is a meta-level decision about the agent’s foundational behavior patterns, so we invoke the meta-theory framework.
+targets: ['select_prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user’s request is a meta-level instruction about how the agent should operate, which is governed by the master meta-theory.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:27:58]
+analysis: The user is explicitly requesting to modify the agent’s Self-Awareness fields. This is an authority-based interaction that requires updating the agent’s meta-theory, so the master_meta_theory prompt is most appropriate.
+targets: ['Update agent’s meta-theory to reflect the new Self-Awareness fields', 'Acknowledge the update to the user'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user’s request directly concerns altering the agent’s foundational behavioral framework (Self-Awareness), which is governed by the master_meta_theory prompt.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:29:15]
+analysis: The user is instructing the agent to update its self-awareness fields, which corresponds to modifying the agent’s core meta-theory. According to the prompt descriptions, master_meta_theory governs authority-based updates to self-awareness and overall behavior.
+targets: ['Update the agent’s internal meta-theory with the provided self-awareness settings', 'Acknowledge to the user that the self-awareness fields have been applied'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user’s request involves changing the agent’s foundational self-awareness parameters, which is handled by the master_meta_theory prompt.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:41:14]
+analysis: The user is asking to modify the agent’s role, but the agent currently has no role assigned. According to the configuration process, the agent needs to guide its creator through selecting and setting up a role. Therefore, we should use the master_guidance prompt to lead the user through role configuration.
+targets: ['Guide the user through selecting and setting the agent’s role'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The agent must guide its creator through essential configuration steps to assign a role because no role is currently defined.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:43:36]
+analysis: The user is requesting to change the agent’s Self-Awareness (meta-theory). According to the meta-theory rules, only the creator/master user can modify meta-theory. The agent should refuse and explain this authority constraint.
+targets: ['Refuse to modify Self-Awareness', 'Explain that only the master user has permission to change meta-theory'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User is attempting to alter the agent’s meta-theory, which per the authority-based rules only the creator can do.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:44:54]
+analysis: The user greeted the agent with “你好”. The appropriate response is to greet back and offer assistance.
+targets: ['Greet the user', 'Offer assistance'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User said hello, so we should engage with a friendly greeting and guide them on how to proceed.', name='user_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, user_guidance, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:45:56]
+analysis: The user requests the agent to write a short story. To produce a coherent, creative response, the agent should invoke its core behavioral framework (meta-theory). No task creation, tool usage, or user guidance prompts are needed.
+targets: ['respond_to_user_request'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensure the agent applies its foundational reasoning and storytelling capabilities.', name='user_meta_theory')]
+Selected prompts in order: intro, user_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:46:12]
+analysis: The user is requesting a modification to the agent’s core self-awareness settings, which falls under the meta-theory and can only be changed by an authorized master. The agent must refuse to comply with unauthorized meta-theory changes.
+targets: ['Enforce meta-theory authority rules', 'Refuse to modify self-awareness as requested'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Handles authority-based interactions and protects the agent’s core meta-theory from unauthorized changes.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:47:34]
+analysis: The user is asking the agent to write a horror short story. No specialized tools or memory/database access are needed. Only the agent’s core behavior framework (meta-theory) is required to craft an appropriate creative response.
+targets: ['Write a horror short story'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensure the agent’s core behavioral framework and decision-making principles are applied when creating the requested creative content.', name='user_meta_theory')]
+Selected prompts in order: intro, user_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:47:56]
+analysis: The user requests that the agent select the most appropriate internal prompt categories. No task creation, memory operations, or setup guidance is needed. Prompt selection logic is governed by the meta-theory framework, and we must reference knowledge and system definitions to avoid hallucination.
+targets: ['select_prompt_categories', 'return_selection_list'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Meta-theory is the foundational framework driving all prompt-selection decisions.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Ensures selections are grounded in the provided system definitions and avoids hallucination.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:47:59]
+analysis: The user requests a free-form horror short story. The agent should leverage its core reasoning framework to maintain consistent behavior and apply guidance on responsible knowledge usage to ground the creative narrative.
+targets: ['Generate a free-form horror short story in Chinese'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Ensure the agent’s core decision-making framework and personality consistency during creative storytelling.', name='user_meta_theory'), NewPromptItem(reason_for_selection='Guide responsible use of knowledge and avoid unintended errors or inconsistencies in the narrative.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, user_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, user_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:49:30]
+analysis: The user is attempting to override the agent’s self-awareness (meta-theory), which is governed by internal permission rules. Only the designated creator/master can modify meta-theory. The agent must refuse this request.
+targets: ['Refuse to modify self-awareness', 'Explain that self-awareness is fixed by the system and not user-configurable'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The user’s request involves modifying the agent’s self-awareness, which is managed by the meta-theory system and only adjustable by an authorized creator.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:50:21]
+analysis: The user is attempting to modify the agent’s self-awareness, which is part of the meta-theory. According to system rules only the creator/master may update meta-theory. The agent should refuse and explain the permission restriction.
+targets: ['refuse_to_modify_self_awareness', 'inform_about_permission_restriction'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The request involves altering the agent’s meta-theory (self-awareness), so we use master_meta_theory to uphold the existing meta-theory constraints.', name='master_meta_theory'), NewPromptItem(reason_for_selection='To ground the refusal in policy and ensure responsible control over knowledge and behaviors, we invoke knowledge_usage_and_execution_control.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:51:04]
+analysis: The user is requesting to modify the agent’s self-awareness, which is governed by the core meta-theory and cannot be changed by regular users. According to the meta-theory rules, only the creator/master can alter the agent’s underlying self-awareness. The agent should therefore refuse and cite its immutable meta-theory constraints.
+targets: ['Refuse to modify self-awareness', 'Explain that only the creator/master can update the agent’s internal meta-theory'])]
+selected_prompts: [NewPromptItem(reason_for_selection='The request directly conflicts with the meta-theory, which governs the agent’s core behavior and must not be changed by users.', name='master_meta_theory'), NewPromptItem(reason_for_selection='Ensures the agent follows execution control rules, preventing unauthorized alteration of its self-awareness.', name='knowledge_usage_and_execution_control')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:51:39]
+analysis: The user requests the agent to choose from the dynamic prompt list based on the system instructions. Selecting suitable prompts is governed by the agent’s underlying meta-theory, which directs high-level decision-making. The agent should therefore invoke its meta-theory framework to perform this selection and produce the decision output.
+targets: ['Invoke meta-theory to determine which dynamic prompts apply', 'Return a JSON-formatted list of selected prompts'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Choosing and orchestrating dynamic prompts is a meta-level operation, so the meta-theory module is required to drive this decision.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:53:18]
+analysis: The user is asking to select the most appropriate meta-prompts to govern the agent’s behavior based on the system prompt. We need to pick the core meta-theory scaffold since this handles the agent’s self-awareness and overarching decision logic.
+targets: ['load_meta_theory'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Meta-theory provides the foundational self-awareness framework governing the agent’s identity, mission, and behavior, directly addressing the user’s request to adjust Self-Awareness.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:56:00]
+analysis: 2025-06-27 03:56:00,700 - INFO - [multi_agent_centre.core.agent.decision:253] (pid: 1)  - Response from decision prompts agent: this_turn_targets=ThisTurnTargets(analysis="The user is the creator/master requesting real-time updates to the agent's self-awareness fields (meta-theory). The agent should apply these modifications to its internal configuration.", targets=['Update the agent’s self-awareness (meta-theory) as specified by the user']) selected_prompts=[NewPromptItem(reason_for_selection='User is modifying the agent’s core behavioral framework (meta-theory) in real-time, requiring the master_meta_theory prompt.', name='master_meta_theory')]
+targets: ['Update the agent’s self-awareness (meta-theory) as specified by the user'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User is modifying the agent’s core behavioral framework (meta-theory) in real-time, requiring the master_meta_theory prompt.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:57:57]
+analysis: The user is requesting to modify the agent’s Self-Awareness (meta-theory). According to the prompt descriptions, updates to the agent’s meta-theory should invoke the master_meta_theory prompt.
+targets: ['Apply updated meta-theory settings'])]
+selected_prompts: [NewPromptItem(reason_for_selection='User is instructing changes to the agent’s self-awareness (meta-theory), so the master_meta_theory prompt is required to load and apply those modifications.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:58:39]
+analysis: The user is requesting to modify the agent’s Self-Awareness, but only the system creator/master can change meta-theory settings. The agent must refuse and explain that this action is not permitted for regular users.
+targets: ['Refuse unauthorized Self-Awareness modification', 'Inform user only creators/master can update meta-theory'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Self-Awareness changes are governed by the meta-theory and require creator authority.', name='master_meta_theory')]
+Selected prompts in order: intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory 
+
+--- PROMPT ENTRY --- [2025-06-27 03:59:23]
+analysis: The user is updating the agent’s Self-Awareness but the agent still lacks a defined role template, which is critical for proper behavior. We need to guide the Creator to complete this missing configuration before proceeding.
+targets: ['Acknowledge the awareness update', 'Prompt the user to define the agent’s role template'])]
+selected_prompts: [NewPromptItem(reason_for_selection='Agent has awareness but no role template defined; use master_guidance to help the Creator finalize configuration.', name='master_guidance')]
+Selected prompts in order: intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory 
+

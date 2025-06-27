@@ -33,6 +33,12 @@ cat prompt_lines.txt | ./count_prompt_frequency.sh
 cat log_blocks.txt | ./parse_prompt_blocks.sh
 ```
 
+## Command to filter log 
+```bash
+~$ docker ps | grep multi | awk '{print $1}' | xargs -I {} docker logs {} -f 2>&1 | grep -B 1  --line-buffered "Selected prompts in order" 
+```
+
+
 ## 📂 專案結構
 
 ```
