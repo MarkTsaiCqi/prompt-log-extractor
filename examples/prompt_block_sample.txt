@@ -1,0 +1,14 @@
+intro, master_meta_theory, memory_and_database_guidelines, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory
+intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory
+intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, master_guidance, awareness_prompt, master_signal_theory
+intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory
+intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory
+intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory
+intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory
+intro, comments, chatting_object_and_agent_info, knowledge_usage_and_execution_control, awareness_prompt, master_signal_theory
+intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory
+intro, master_meta_theory, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory
+intro, task_handling_and_creation_rules, task_creation_tool_usage, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory
+intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory
+intro, comments, chatting_object_and_agent_info, master_guidance, awareness_prompt, master_signal_theory
+intro, master_meta_theory, comments, chatting_object_and_agent_info, awareness_prompt, master_signal_theory
