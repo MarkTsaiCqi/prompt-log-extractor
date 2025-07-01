@@ -22,4 +22,4 @@ docker logs -f xyz-platform 2>&1 | awk '
       }
     }
   }
-'
+
